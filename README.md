@@ -1,4 +1,4 @@
-This folder is a *small* test data set
+This folder should be a *small* dataset.  (could be much smaller!)
 
 We need unit tests to make sure we detect various files correctly, including:
 
@@ -8,5 +8,11 @@ We need unit tests to make sure we detect various files correctly, including:
  * geodatabases  (.gdb folder)
 
 
+See: InArcCatalog.png for how this folder shows up in ArcCatalog
 
+We are still missing an example for:
+  INFO/ARCDR9 >> ArcInfo Workspace
+  dbCache.dat.index  >> Google Cache?  perhaps check the magic number on this one?
+  
+  
 
