@@ -1,0 +1,7 @@
+<PAMDataset>
+  <SRS>PROJCS[&quot;DHDN_3_Degree_Gauss_Zone_3&quot;,GEOGCS[&quot;GCS_Deutsches_Hauptdreiecksnetz&quot;,DATUM[&quot;D_Deutsches_Hauptdreiecksnetz&quot;,SPHEROID[&quot;Bessel_1841&quot;,6377397.155,299.1528128]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.017453292519943295]],PROJECTION[&quot;Gauss_Kruger&quot;],PARAMETER[&quot;False_Easting&quot;,3500000.0],PARAMETER[&quot;False_Northing&quot;,0.0],PARAMETER[&quot;Central_Meridian&quot;,9.0],PARAMETER[&quot;Scale_Factor&quot;,1.0],PARAMETER[&quot;Latitude_Of_Origin&quot;,0.0],UNIT[&quot;Meter&quot;,1.0]]</SRS>
+  <PAMRasterBand band="1">
+    <Description>asdc2</Description>
+    <NoDataValue>2.56000000000000E+002</NoDataValue>
+  </PAMRasterBand>
+</PAMDataset>
