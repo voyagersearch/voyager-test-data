@@ -18,7 +18,6 @@
 	<str name="pixelType">Int16</str>
 	<str name="rasterSize">121x121</str>
 	<str name="md5">bbef4e9f27e37a35ef6ed4a29dd42b3c</str>
-	<str name="geometryType">Raster</str>
 	<str name="bbox">5.995800 36.995800 7.004200 38.004200</str>
 	<str name="worker">cpp</str>
 	<str name="extractor">cpp/gdal</str>
