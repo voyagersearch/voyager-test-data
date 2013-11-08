@@ -1,0 +1,56 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:net="net:geointonline:messaging">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <net:sendMessageToGO>
+         <!--Optional:-->
+         <GOMESSAGE>
+            <Operation>Insert</Operation>
+            <DDMSMessage><ddms:Resource xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://metadata.dod.mil/mdr/ns/DDMS/2.0/" xmlns:ICISM="urn:us:gov:ic:ism:v2" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://metadata.dod.mil/mdr/ns/DDMS/2.0/ http://stlsou.egovservices.net/schemas/ddms/2.0-smarts/ns/DDMS/2.0/DDMS-v2_0.xsd">
+                                <ddms:identifier ddms:qualifier="CTPID" ddms:value="CAIP.SomeUniqueIDtoYou"/>
+                                <ddms:identifier ddms:qualifier="NETWORKID" ddms:value=""/>
+                                <ddms:title ICISM:classification="U" ICISM:ownerProducer="USA">Your Title</ddms:title>
+                                <ddms:description ICISM:classification="U" ICISM:ownerProducer="USA">Your Description (will be limited to 4000 chars to NGA Earth)</ddms:description>
+                                <ddms:language ddms:qualifier="http://metadata.dod.mil/mdr/ns/ExtStd/iso_639-2b.owl#en" ddms:value="English"/>
+                                <ddms:dates ddms:posted="2010-04-21T19:41:50.182+00:00" ddms:created="2010-04-21+00:00"/>
+                                <ddms:type ddms:qualifier="http://metadata.dod.mil/mdr/ns/CES/DDMS/DC/DCMITYPE/DCMIType.owl#DCMIType" ddms:value="USTIL-CAIP"/>
+                                <ddms:creator ICISM:classification="U" ICISM:ownerProducer="USA">
+                                        <ddms:Organization>
+                                                <ddms:name>CAIP</ddms:name>
+                                        </ddms:Organization>
+                                </ddms:creator>
+                                <ddms:subjectCoverage>
+                                        <ddms:Subject>
+                                                <ddms:category ddms:qualifier="GOUSE" ddms:label="Intelligence"/>
+                                                <ddms:category ddms:qualifier="GOTYPE" ddms:label="Summary"/>
+                                                <ddms:category ddms:qualifier="NETWORK" ddms:label="www"/>
+                                                <ddms:category ddms:qualifier="Category" ddms:label="Internal|External"/>
+                                                <ddms:category ddms:qualifier="CTP" ddms:label="CAIP (Spell this out)"/>
+                                                <ddms:keyword ddms:value="Do"/>
+                                                <ddms:keyword ddms:value="Your"/>
+                                                <ddms:keyword ddms:value="Best"/>
+                                                <ddms:keyword ddms:value="Here"/>
+                                        </ddms:Subject>
+                                </ddms:subjectCoverage>
+                                <ddms:virtualCoverage ddms:address="http://www.url.to.product.com/" ddms:protocol="URL"/>
+                                <ddms:temporalCoverage>
+                                        <ddms:TimePeriod>
+                                                <ddms:name>Source</ddms:name>
+                                                <ddms:start>2010-04-21+00:00</ddms:start>
+                                                <ddms:end>2010-04-21+00:00</ddms:end>
+                                        </ddms:TimePeriod>
+                                </ddms:temporalCoverage>
+                                <ddms:geospatialCoverage>
+                                        <ddms:GeospatialExtent>
+                                                <ddms:boundingGeometry>
+                                                        <gml:Point gml:id="BGE-1" srsName="http://metadata.dod.mil/mdr/ns/GSIP/crs/WGS84E_2D">
+                                                                <gml:pos>12 24</gml:pos>
+                                                        </gml:Point>
+                                                </ddms:boundingGeometry>
+                                        </ddms:GeospatialExtent>
+                                </ddms:geospatialCoverage>
+                                <ddms:security ICISM:classification="U" ICISM:ownerProducer="USA"/>
+                        </ddms:Resource></DDMSMessage>
+         </GOMESSAGE>
+      </net:sendMessageToGO>
+   </soapenv:Body>
+</soapenv:Envelope>
