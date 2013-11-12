@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen SCHSchema="../../Schematron/ISM/ISM_XML.sch"?><?oxygen SCHSchema="../../Schematron/IRM/IRM_XML.sch"?><?oxygen SCHSchema="../../Schematron/NTK/NTK_XML.sch"?><?oxygen SCHSchema="../../Schematron/PUBS/PUBS_XML.sch"?>
+<!-- Notices - Distribution Notice: 
+           This document has been approved for Public Release and is available for use without restriction.
+       -->
+<!-- All classification marks in this example are   --><!-- for illustrative purposes only, there are no   --><!-- actual classified data contained in this example --><IntelDoc xmlns="urn:us:gov:ic:pubs" xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+          xmlns:ism="urn:us:gov:ic:ism"
+          xmlns:ntk="urn:us:gov:ic:ntk"
+          xmlns:irm="urn:us:gov:ic:irm"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          DESVersion="9"
+          ism:DESVersion="8"
+          ntk:DESVersion="6"
+          irm:DESVersion="7"
+          ism:classification="TS"
+          ism:ownerProducer="USA"
+          ism:disseminationControls="NF"
+          ism:atomicEnergyMarkings="RD RD-SG-14 FRD FRD-SG-18 FRD-SG-20"
+          ism:derivativelyClassifiedBy="DNI"
+          ism:derivedFrom="Multiple Sources"
+          ism:FGIsourceOpen="KGZ MDG"
+          ism:declassException="AEA 25X1"
+          ism:resourceElement="true"
+          ism:createDate="2008-09-09"
+          ism:compliesWith="ICDocument"
+          xsi:schemaLocation="urn:us:gov:ic:pubs ../../Schema/PUBS/PUBS-XML.xsd">
+   
+   <PublicationMetadataList>
+      <PublicationMetadata ism:classification="C" ism:ownerProducer="USA" ism:disseminationControls="NF"
+                           ism:atomicEnergyMarkings="RD RD-SG-14 FRD FRD-SG-18 FRD-SG-20">
+         <AdministrativeMetadata>
+            <IdentifierList>
+               <DocumentID>MI-1812-1450-08</DocumentID>
+               <InternalID>Hibernia Alert</InternalID>
+            </IdentifierList>
+            <Publisher>
+               <AgencyAcronym acronym="DIA"/>
+               <AuthorInfo>
+                  <Surname>Doe</Surname>
+                  <GivenName>Jane</GivenName>
+               </AuthorInfo>
+               <POCinfo>
+                  <Surname>Doe</Surname>
+                  <GivenName>John</GivenName>
+               </POCinfo>
+            </Publisher>
+            <DateList>
+               <DateInfoCutoff>
+                  <ApproximableDateTime>2008-09-09</ApproximableDateTime>
+                  <SearchableDateTime>
+                     <EarliestStartDate>2008-09-09T00:00:00Z</EarliestStartDate>
+                     <LatestEndDate>2008-09-09T23:59:59Z</LatestEndDate>
+                  </SearchableDateTime>
+               </DateInfoCutoff>
+               <DatePublished>2008-09-09</DatePublished>
+               <DatePosted>2008-09-09</DatePosted>
+               <DateValidTil>2009-09-09</DateValidTil>
+            </DateList>
+            <Rights>
+               <PrivacyActIndicator indicator="false"/>
+               <CopyrightIndicator indicator="false"/>
+            </Rights>
+            <RecordsManagementInfo>
+               <VitalRecordIndicator indicator="true"/>
+               <ApplicationSoftware>Midguard database production</ApplicationSoftware>
+               <MediaFormat>application/dni-pubs+xml</MediaFormat>
+               <RecordKeeper>
+                  <RecordKeeperID>DNI-1</RecordKeeperID>
+                  <ddms:organization>
+                     <ddms:name>DNI</ddms:name>
+                  </ddms:organization>
+               </RecordKeeper>
+            </RecordsManagementInfo>
+            <RevisionRecall ism:classification="U" ism:ownerProducer="USA"
+                            revisionType="ADMINISTRATIVE REVISION">Updated Author POC info</RevisionRecall>
+            <ProductionMetricsList ism:classification="U" ism:ownerProducer="USA">
+               <ddms:productionMetric ism:classification="U" ism:ownerProducer="USA" ddms:subject="FOOD"
+                                      ddms:coverage="AFG"/>
+            </ProductionMetricsList>
+         </AdministrativeMetadata>
+         <DescriptiveMetadata>
+            <Title ism:classification="U" ism:ownerProducer="USA">Hibernia war capabilities </Title>
+            <Language>en</Language>
+            <Description ism:classification="U" ism:ownerProducer="USA">No description available</Description>
+            <Coverage>
+               <GeospatialExtent>
+                  <GeographicIdentifier>
+                     <CountryCode vocabulary="ISO-3">HTI</CountryCode>
+                  </GeographicIdentifier>
+               </GeospatialExtent>
+            </Coverage>
+            <Subject>
+               <SubjectCode>1812</SubjectCode>
+               <Keyword>Dark Ages, warfare</Keyword>
+               <Keyword ism:classification="C" ism:ownerProducer="USA"
+                        ism:atomicEnergyMarkings="RD RD-SG-14"
+                        ism:disseminationControls="NF">ExampleKeyword1</Keyword>
+               <Keyword ism:classification="C" ism:ownerProducer="USA"
+                        ism:atomicEnergyMarkings="FRD FRD-SG-18 FRD-SG-20"
+                        ism:disseminationControls="NF">ExampleKeyword2</Keyword>
+            </Subject>
+            <ProductLine>A document</ProductLine>
+        
+         </DescriptiveMetadata>
+         <NoteList ism:classification="C" ism:ownerProducer="USA"
+                   ism:disseminationControls="RELIDO">
+            <Note ism:ownerProducer="USA" ism:classification="C"
+                  ism:disseminationControls="RELIDO"
+                  ism:noticeType="FRD RD">
+               <Para ism:ownerProducer="USA" ism:classification="U"> This is an Unclass DOE Notice</Para>
+            </Note>
+            <Note noteType="MultiNote">
+               <Para ism:ownerProducer="USA" ism:classification="U">This is the first paragraph of some other  multi paragraph Note</Para>
+               <Para ism:ownerProducer="USA" ism:classification="U">This is the second paragraph  other  multi paragraph Note</Para>
+            </Note>
+            <Note ism:classification="U" ism:ownerProducer="USA"
+                  ism:unregisteredNoticeType="Mike1">
+               <Para ism:classification="U" ism:ownerProducer="USA">NAMES NOT FURTHER IDENTIFIED UNLESS OTHERWISE INDICATED</Para>
+            </Note>
+            <Note ism:classification="U" ism:ownerProducer="USA" ism:noticeType="POC"
+                  ism:pocType="ICD-710">
+               <Para ism:classification="U" ism:ownerProducer="USA">John Smith, AgencyX, 888-555-5555</Para>
+            </Note>
+         </NoteList>
+      </PublicationMetadata>
+  </PublicationMetadataList>
+   <DocumentBody ism:classification="TS" ism:ownerProducer="USA" ism:disseminationControls="NF"
+                 ism:FGIsourceOpen="KGZ MDG">
+      <TOC/>
+      <MediaResource>
+         <StillImageExhibit xmlns:xlink="http://www.w3.org/1999/xlink" ism:classification="U"
+                            ism:ownerProducer="USA"
+                            xlink:href="http://afmicweb01.dia.ic.gov/product_resources/31288.jpg"/>
+      </MediaResource>
+      <Para ism:classification="U" ism:ownerProducer="USA">Hibernia and Albion are at war while Midguard watches<SourceGroup>
+        <!-- Example 1 -->
+        <!-- All classification marks in this example are   -->
+        <!-- for illustrative purposes only, there are no   -->
+        <!-- actual classified data contained in this example -->
+        <SourceReference ism:classification="U" ism:ownerProducer="USA" publisherType="open-source">
+               <SourceID>SM ID</SourceID>
+               <DocumentID>ISBN:1234</DocumentID>
+               <SourceType>book</SourceType>
+               <DatePublished>2008</DatePublished>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="U" ism:ownerProducer="USA"/>
+               <AuthorInfo ism:pocType="ORCON">
+                  <Surname>White</Surname>
+                  <GivenName>John</GivenName>
+                  <PhoneNumber phoneNumberType="STE">555-555-1234</PhoneNumber>
+               </AuthorInfo>
+               <POCinfo>
+                  <OfficeName>Oxford University Press</OfficeName>
+               </POCinfo>
+               <Title ism:ownerProducer="USA" ism:classification="U">Surviving in Albion</Title>
+               <EditionNumber>3</EditionNumber>
+            </SourceReference>
+
+            <!-- Example 2 -->
+        <!-- All classification marks in this example are   -->
+        <!-- for illustrative purposes only, there are no   -->
+        <!-- actual classified data contained in this example -->
+        <SourceReference ism:classification="TS" ism:ownerProducer="USA" publisherType="IC"
+                             ism:disseminationControls="RELIDO">
+               <SourceID>3/00/1234-08</SourceID>
+               <DocumentID>AA12345</DocumentID>
+               <AgencyAcronym acronym="DIA"/>
+               <IntelDiscipline>GEOINT</IntelDiscipline>
+               <DatePublished>2008-04-01T12:00:00Z</DatePublished>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="TS" ism:SCIcontrols="TK"
+                                           ism:ownerProducer="USA"
+                                           ism:disseminationControls="RELIDO"/>
+               <Title ism:classification="TS" ism:ownerProducer="USA"
+                      ism:disseminationControls="RELIDO">Fredonia Preparing to Test Ballistic Missile</Title>
+            </SourceReference>
+
+            <!-- Example 3 -->
+        <!-- All classification marks in this example are   -->
+        <!-- for illustrative purposes only, there are no   -->
+        <!-- actual classified data contained in this example -->
+        <SourceReference ism:classification="U" ism:ownerProducer="USA" publisherType="open-source">
+               <SourceID>SM ID</SourceID>
+               <DocumentID>ISBN:1234</DocumentID>
+               <SourceType>book</SourceType>
+               <DatePublished>2008</DatePublished>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="U" ism:ownerProducer="USA"/>
+               <AuthorInfo>
+                  <Surname>White</Surname>
+                  <GivenName>John</GivenName>
+               </AuthorInfo>
+               <POCinfo>
+                  <OfficeName>Oxford University Press</OfficeName>
+                  <FormattedSignatureBlock>OUP (USA)</FormattedSignatureBlock>
+               </POCinfo>
+               <Title ism:ownerProducer="USA" ism:classification="U">Surviving in Albion</Title>
+               <EditionNumber>3</EditionNumber>
+            </SourceReference>
+
+            <!-- Example 4 -->
+        <!-- All classification marks in this example are   -->
+        <!-- for illustrative purposes only, there are no   -->
+        <!-- actual classified data contained in this example -->
+      <SourceReference ism:classification="S" ism:FGIsourceOpen="KGZ" ism:ownerProducer="USA"
+                             publisherType="foreign"
+                             ism:disseminationControls="NF">
+               <SourceID>3/00/1234-08</SourceID>
+               <DocumentID>KRG-1234-07</DocumentID>
+               <CountryCode vocabulary="FIPS" ism:classification="U" ism:ownerProducer="USA">KG</CountryCode>
+               <IntelDiscipline>HUMINT</IntelDiscipline>
+               <DatePublished>2008-12-20</DatePublished>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="S" ism:FGIsourceOpen="KGZ"
+                                           ism:ownerProducer="KGZ"
+                                           ism:disseminationControls="NF">
+                  <OriginalClassificationMarking ism:classification="U" ism:ownerProducer="USA">супэр сэкрэт стуфф</OriginalClassificationMarking>
+               </ReferencedResourceSecurity>
+               <POCinfo ism:classification="S" ism:FGIsourceOpen="KGZ" ism:ownerProducer="KGZ"
+                        ism:disseminationControls="NF">
+                  <OfficeName ism:classification="S" ism:FGIsourceOpen="KGZ" ism:ownerProducer="KGZ"
+                              ism:disseminationControls="NF">Monitoring Central</OfficeName>
+                  <FormattedSignatureBlock>кэнтрал мониторинг</FormattedSignatureBlock>
+               </POCinfo>
+               <Title ism:classification="U" ism:ownerProducer="KGZ">Narcotics Trafficking in Albion</Title>
+               <SourceDescriptor ism:classification="U" ism:ownerProducer="USA">Inaccessible underlying sources</SourceDescriptor>
+            </SourceReference>
+
+            <!-- Example 5 -->
+        <!-- All classification marks in this example are   -->
+        <!-- for illustrative purposes only, there are no   -->
+        <!-- actual classified data contained in this example -->
+        <SourceReference ism:classification="U" ism:ownerProducer="USA" publisherType="open-source">
+               <SourceID>SM ID</SourceID>
+               <DocumentID>MC-2009-12-02</DocumentID>
+               <SourceType>periodical</SourceType>
+               <DatePublished>2007-12-20</DatePublished>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="U" ism:ownerProducer="USA"/>
+               <AuthorInfo>
+                  <Surname>White</Surname>
+                  <GivenName>Joan</GivenName>
+               </AuthorInfo>
+               <Title ism:classification="U" ism:ownerProducer="USA">Revitalized Midgard Bazaar</Title>
+               <CompilationTitle ism:classification="U" ism:ownerProducer="USA">Modern Cultures</CompilationTitle>
+               <VolumeNumber>3</VolumeNumber>
+               <SegmentReferenced>
+                  <MediaExtent>Page 1 to 10</MediaExtent>
+                  <SegmentLabel>Section 1.1</SegmentLabel>
+               </SegmentReferenced>
+            </SourceReference>
+
+            <!-- Example 6 -->
+        <!-- All classification marks in this example are   -->
+        <!-- for illustrative purposes only, there are no   -->
+        <!-- actual classified data contained in this example -->
+      <SourceReference ism:classification="U" ism:ownerProducer="USA" publisherType="IC">
+               <SourceID>3/00/1234-08</SourceID>
+               <DocumentID>AA12345</DocumentID>
+               <AgencyAcronym acronym="NGA"/>
+               <IntelDiscipline>GEOINT</IntelDiscipline>
+               <DatePublished>2008-04-01T12:00:00Z</DatePublished>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="TS" ism:ownerProducer="USA"
+                                           ism:disseminationControls="RELIDO"/>
+               <Link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                     xlink:href="https://highside.xyz.gov/supersecretfiles.htm"
+                     ism:classification="TS"
+                     ism:ownerProducer="USA"
+                     ism:disseminationControls="RELIDO">https://highside.xyz.gov/supersecretfiles.htm</Link>
+               <Title ism:classification="U" ism:ownerProducer="USA">Midguard Preparing to Test Ballistic catapult</Title>
+            </SourceReference>
+         </SourceGroup> worried that either may turn on it.</Para>
+
+
+
+
+      <!-- Full Example -->
+    <!-- All classification marks in this example are   -->
+    <!-- for illustrative purposes only, there are no   -->
+    <!-- actual classified data contained in this example -->
+    <Para ism:classification="S" ism:ownerProducer="USA"
+            ism:disseminationControls="RELIDO">Hibernia is a leading industrial country with the capability to produce <SourceGroup>
+            <SourcedText>500 swords per week</SourcedText>
+            <SourceReference ism:classification="U" ism:ownerProducer="USA" publisherType="open-source">
+               <DocumentID>Sword-123</DocumentID>
+               <SourceType>WebSite</SourceType>
+               <DatePublished>2007-12-20</DatePublished>
+               <DateTimeReferenced>2008-12-05T15:00:00Z</DateTimeReferenced>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="U" ism:ownerProducer="USA">
+                  <OriginalClassificationMarking ism:classification="U" ism:ownerProducer="USA">hibernia-sword.com
+              confidential</OriginalClassificationMarking>
+               </ReferencedResourceSecurity>
+               <Link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                     xlink:href="http://www.hibernia-sword.com/">http://www.hibernia-sword.com/</Link>
+
+               <AuthorInfo>
+                  <Surname>White</Surname>
+                  <GivenName>Joan</GivenName>
+               </AuthorInfo>
+               <POCinfo>
+                  <JobTitle>Chief Editor</JobTitle>
+                  <PhoneNumber phoneNumberType="Commercial">555-1212</PhoneNumber>
+                  <EmailAddress>editor@Hibernia-Swords.com</EmailAddress>
+                  <ContactFor>Actual author info</ContactFor>
+               </POCinfo>
+               <Title ism:classification="U" ism:ownerProducer="USA">Sword production in Hibernia</Title>
+               <SegmentReferenced>
+                  <MediaExtent>Page 2 to 3</MediaExtent>
+                  <SegmentLabel>Section 1.1</SegmentLabel>
+               </SegmentReferenced>
+               <SourceDescriptor>A well respected public site.</SourceDescriptor>
+            </SourceReference>
+
+            <SourceReference ism:classification="S" ism:FGIsourceOpen="MDG" ism:ownerProducer="USA"
+                             ism:disseminationControls="NF"
+                             publisherType="foreign">
+               <DocumentID>MGD-1234-07</DocumentID>
+               <CountryCode vocabulary="ISO-3" ism:classification="U" ism:ownerProducer="USA">MDG</CountryCode>
+               <IntelDiscipline>TECHINT</IntelDiscipline>
+               <DatePublished>2008-12-20</DatePublished>
+               <DateInformation>
+                  <ApproximableDateTime>2008-12-01</ApproximableDateTime>
+                  <SearchableDateTime>
+                     <EarliestStartDate>2008-12-01T00:00:00Z</EarliestStartDate>
+                     <LatestEndDate>2008-12-02T00:00:00Z</LatestEndDate>
+                  </SearchableDateTime>
+               </DateInformation>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="S" ism:ownerProducer="MDG"
+                                           ism:disseminationControls="NF"/>
+               <POCinfo ism:classification="S" ism:ownerProducer="MDG" ism:disseminationControls="NF">
+                  <OfficeName>MidGuard Intelligence Agency (MIA)</OfficeName>
+               </POCinfo>
+               <Title ism:classification="U" ism:ownerProducer="MDG">Sword production by Country</Title>
+               <SegmentReferenced>
+                  <SegmentLabel>Section 1</SegmentLabel>
+                  <MediaExtent>Page 5</MediaExtent>
+                  <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="C" ism:ownerProducer="MDG"
+                                              ism:disseminationControls="NF"/>
+               </SegmentReferenced>
+               <SourceDescriptor ism:classification="U" ism:ownerProducer="USA">Inaccessible underlying sources</SourceDescriptor>
+            </SourceReference>
+         </SourceGroup> but their economy is sagging and they could never <SourceGroup>
+            <SourcedText>afford the iron ore</SourcedText>
+            <SourceReference ism:classification="C" ism:ownerProducer="USA"
+                             ism:disseminationControls="RELIDO"
+                             publisherType="IC">
+               <SourceID>3/00/1234-08</SourceID>
+               <DocumentID>AA12345</DocumentID>
+               <AgencyAcronym acronym="CIA"/>
+               <IntelDiscipline>HUMINT</IntelDiscipline>
+               <DatePublished>2008-04-01T12:00:00Z</DatePublished>
+               <ReferencedResourceSecurity ism:excludeFromRollup="true" ism:classification="TS" ism:ownerProducer="USA"
+                                           ism:disseminationControls="RELIDO"/>
+               <Title ism:classification="C" ism:ownerProducer="USA"
+                      ism:disseminationControls="RELIDO">Iron Ore prices in Hibernia</Title>
+               <SourceDescriptor>Source is a merchant who may have vested interest in inflating the cost of Iron ore.</SourceDescriptor>
+            </SourceReference>
+         </SourceGroup> required to mount an attack.</Para>
+
+  </DocumentBody>
+</IntelDoc>
