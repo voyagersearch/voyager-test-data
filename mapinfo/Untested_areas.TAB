@@ -1,0 +1,16 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 1
+    ID Integer ;
+ReadOnly
+begin_metadata
+"\Discover" = ""
+"\Discover\Version" = "11.00"
+"\Discover\Module" = "Donut"
+"\Discover\Date" = "27/04/2010"
+"\IsReadOnly" = "FALSE"
+end_metadata
