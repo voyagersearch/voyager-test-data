@@ -1,45 +1,9 @@
 VERSION 300
 DELIMITER ","
  CoordSys Earth Projection 1, 104                                                                                                                                                                       
-COLUMNS 38
+COLUMNS 1
     ID decimal(10,0)
-    LONGITUDE decimal(10,0)
-    LATITUDE decimal(10,0)
-    KIM_NO float
-    ACCURACY char(30)
-    REGNO char(50)
-    COMPANY char(100)
-    TRADENAME char(50)
-    POSTADD1 char(40)
-    POSTADD2 char(40)
-    POSTADD3 char(30)
-    POSTCODE char(4)
-    RESADD1 char(60)
-    RESADD2 char(60)
-    RESADD3 char(30)
-    STREETCODE char(4)
-    SIC_CODE float
-    SIC_DESC char(150)
-    LASTUPDATE char(10)
-    AUDITOR char(50)
-    BANK char(50)
-    NO_OF_EMP decimal(17,6)
-    TOT_FLEET decimal(17,6)
-    CARS decimal(17,6)
-    TRUCKS decimal(17,6)
-    LDV decimal(17,6)
-    IMP_EXP char(3)
-    TURNOVER float
-    BEE_PROXY char(5)
-    AG_SUB_ID decimal(9,0)
-    SUBURB char(64)
-    AG_TOWN_ID decimal(4,0)
-    TOWN char(64)
-    AG_MUN_ID decimal(4,0)
-    MUNIC char(100)
-    AG_PROV_ID decimal(4,0)
-    PROVINCE char(100)
-    UPDATED char(16)
+
 DATA
 POINT 28.2265 -25.766604
 POINT 28.2265 -25.7666
