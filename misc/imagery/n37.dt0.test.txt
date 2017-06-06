@@ -1,0 +1,26 @@
+# What we expect to find
+<doc>
+	<long name="bytes">140223</long>
+	<int name="columnCount">121</int>
+	<str name="fileExtension">dt0</str>
+	<str name="folder">imagery</str>
+	<str name="fs_meta_AREA_OR_POINT">Point</str>
+	<str name="fs_meta_DTED_CompilationDate">0106</str>
+	<str name="fs_meta_DTED_DataEdition">01</str>
+	<str name="fs_meta_DTED_HorizontalAccuracy">0007</str>
+	<str name="fs_meta_DTED_HorizontalDatum">WGS84</str>
+	<str name="fs_meta_DTED_MaintenanceDate">0106</str>
+	<str name="fs_meta_DTED_MaintenanceDescription">0000</str>
+	<str name="gdal_driver">DTED/DTED Elevation Raster</str>
+	<str name="mime">image/x-dted-level-0</str>
+	<int name="numBands">1</int>
+	<float name="pixDepth">16.0</float>
+	<str name="pixelType">Int16</str>
+	<str name="rasterSize">121x121</str>
+	<str name="md5">bbef4e9f27e37a35ef6ed4a29dd42b3c</str>
+	<str name="bbox">5.995800 36.995800 7.004200 38.004200</str>
+	<str name="worker">cpp</str>
+	<str name="extractor">cpp/gdal</str>
+</doc>
+
+

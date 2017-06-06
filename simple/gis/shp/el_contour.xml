@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<metadata>
+<idinfo>
+    <citation>
+      <citeinfo>
+	<origin>California Spatial Information Library</origin>
+	<pubdate>200201</pubdate>
+	<title>local_roads</title>
+	<geoform>remote-sensing image</geoform>
+	<pubinfo>
+	  <pubplace>Sacramento, CA</pubplace>
+	  <publish>State of California</publish>
+	</pubinfo>
+        <onlink>http://gis.ca.gov/casil/gis.ca.gov/tiger2k</onlink>
+      </citeinfo>
+    </citation>
+
+    <descript>
+      <abstract>
+This dataset is one from a series of transportation layers derived
+from the US Census Bureau Tiger 2K (June 7, 2002 Version) information.
+All the layers are statewide and are arranged by their major Census
+Feature Class Code (CFCC).  All data layers are reprojected into the
+CaSIL standard projection, and only a small subset of the attribution
+is included.  Zip Code, and address information is NOT included.
+
+CaSIL has divided these transportation layers to help users choose the
+appropriate level of detail for their project.
+
+Users requiring further TIGER information, are encouraged to use the
+native TIGER files (also on CaSIL) or directly from the Census Bureau.
+
+The following transportation layers are included in the series:
+
+us_highways - CFCC A11-A28 - 6 [Mb]
+
+Primary Highway With Limited Access Interstate highways and some toll
+highways are in this category (A1) and are distinguished by the
+presence of interchanges.
+
+Primary Road Without Limited Access This category (A2) includes
+nationally and regionally important highways that do not have limited
+access as required by category A1. It consists mainly of US highways,
+but may include some state highways and county highways that connect
+cities and larger towns.
+
+
+state_highways - CFCC A31-A38 - 10[Mb]
+
+Secondary and Connecting Road This category (A3) includes mostly state
+highways, but may include some county highways that connect smaller
+towns, subdivisions, and neighborhoods.
+
+local_roads - CFCC A41-A48 - 340[Mb]
+
+Local, Neighborhood, and Rural Road A road in this category (A4) is
+used for local traffic and usually has a single lane of traffic in
+each direction. In an urban area, this is a neighborhood road and
+street that is not a thorough-fare belonging in categories A2 or
+A3. In a rural area, this is a short-distance road connecting the
+smallest towns; the road may or may not have a state or county route
+number.
+
+vehicular_trails - CFCC A51-A58 - 7[Mb]
+
+Vehicular Trail A road in this category (A5) is usable only by
+four-wheel drive vehicles, is usually a one-lane dirt trail, and is
+found almost exclu-sively in very rural areas.
+
+other_thoroughfare - CFCC A61-A78 - 15[Mb]
+
+Road with Special Characteristics This category (A6) includes roads,
+portions of a road, intersections of a road, or the ends of a road
+that are parts of the vehicular highway system and have separately
+identifiable characteristics.
+
+Road as Other Thoroughfare A road in this category (A7) is not part of
+the vehicular highway system. It is used by bicyclists or pedestrians,
+and is typically inaccessible to mainstream motor traffic except for
+private-owner and service vehicles. This category includes foot and
+hiking trails located on park and forest land, as well as stairs or
+walkways that follow a road right-of-way and have names similar to
+road names.
+
+railroad - CFCC B?? - 6[Mb]
+
+Railroad Main Line A railroad in this category is the primary track
+that provides service between destinations. A main line track often
+carries the name of the owning and operating railroad company.
+
+Railroad Spur A railroad in this category is the track that leaves the
+main track, ending in an industrial park, factory, or warehouse area,
+or forming a siding along the main track.
+
+Railroad Yard A railroad yard track has parallel tracks that form a
+working area for the railroad company. Train cars and engines are
+repaired, switched, and dispatched from a yard.
+
+Railroad with Special Characteristics A railroad or portions of a
+rail- road track that are parts of the railroad system and have
+separately identifiable characteristics.
+</abstract>
+
+<purpose>
+	These data are intended for geographic display and analysis for California.
+	They should be displayed and analyzed at scales appropriate for
+	1:100,000-scale data.
+</purpose>
+<supplinf>This dataset has been made available thru the California
+      Spatial Information Library URL:http://gis.ca.gov.  They have
+      been subsetted to California, and reprojected into a common
+      statewide projection.
+
+     To find out more about TIGER/Line files and other Census TIGER
+database derived data sets visit http://www.census.gov/geo/www/tiger.
+</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<sngdate>
+<caldate>2000</caldate>
+</sngdate>
+</timeinfo>
+<current>2000</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>
+TIGER/Line files are extracted from the Census TIGER database when
+needed for geographic programs required to support the census and
+survey programs of the U.S. Census Bureau.  No changes or updates
+will be made to the UA Census 2000 TIGER/Line files.  Future releases
+of TIGER/Line files will reflect updates made to the Census TIGER
+database and will be released under a version numbering system
+based on the month and year the data is extracted.
+</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-124.</westbc>
+<eastbc>-114.</eastbc>
+<northbc>42.</northbc>
+<southbc>32.</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>None</themekt>
+<themekey>Line Feature</themekey>
+<themekey>Feature Identifier</themekey>
+<themekey>Census Feature Class Code (CFCC)</themekey>
+<themekey>TIGER/Line</themekey>
+<themekey>Street Centerline</themekey>
+<themekey>Street Segment</themekey>
+</theme>
+<place>
+<placekt>
+FIPS Publication 6-4
+FIPS Publication 55
+</placekt>
+<placekey>California</placekey>
+</place>
+</keywords>
+<accconst>None</accconst>
+<useconst>
+None.  Acknowledgment of the U.S. Census Bureau would be appreciated
+for products derived from these files.  TIGER, TIGER/Line, and Census
+TIGER are registered trademarks of the U.S. Census Bureau.  ZCTA is a
+trademark of the U.S. Census Bureau.
+</useconst>
+    <ptcontac>
+      <cntinfo>
+	<cntorgp>
+	  <cntorg>California Spatial Information Library</cntorg>
+	</cntorgp>
+	<cntaddr>
+	  <addrtype>mailing address</addrtype>
+	  <address>900 N. Street</address>
+	  <city>Sacramento</city>
+	  <state>CA</state>
+	  <postal></postal>
+	</cntaddr>
+	<cntvoice>916 653 9990</cntvoice>
+	<cntemail>casil@gis.ca.gov</cntemail>
+	
+	<cntinst>CaSIL URL:http://gis.ca.gov/ is providing this
+	  dataset via an online option not offered by the U. S. Census
+	  Bureau. To find out more about TIGER/Line files and
+	  other Census TIGER database derived data sets visit
+	  &lt;URL:http://www.census.gov/geo/www/tiger&gt;
+	</cntinst>
+      </cntinfo>
+    </ptcontac>
+    <datacred>This dataset was created by the U.S. Census Burueau.
+  CaSIL subsetted and reformated the dataset for its use.  Please
+  acknowledge the U.S. Census Bureau for derived products from this
+  dataset.</datacred>
+<crossref>
+	<citeinfo>
+	<origin> U.S. Department of Commerce U.S. Census Bureau
+Geography Division
+</origin>
+<pubdate>2002</pubdate>
+<title>TIGER/Line Files, UA Census 2000</title>
+<edition>UA Census 2000</edition>
+<serinfo>
+<sername>TIGER/Line Files</sername>
+<issue>
+Version (MMYY) represents the month and year
+file created
+</issue>
+</serinfo>
+<pubinfo>
+<pubplace>Washington, DC</pubplace>
+<publish>
+U.S. Department of Commerce
+U.S. Census Bureau
+Geography Division
+</publish>
+</pubinfo>
+</citeinfo>
+</crossref>
+
+</idinfo>
+<dataqual>
+<attracc>
+<complete>
+Data completeness of the TIGER/Line files reflects the contents of the
+Census TIGER database at the time the TIGER/Line files (UA Census 2000
+version) were created.
+</complete>
+<posacc>
+<horizpa>
+<horizpar>
+The information present in these files is provided for the purposes
+of statistical analysis and census operations only.  Coordinates
+in the TIGER/Line files have six implied decimal places, but
+the positional accuracy of these coordinates is not as great as
+the six decimal places suggest.  The positional accuracy varies
+with the source materials used, but generally the information is
+no better than the established national map Accuracy standards
+for 1:100,000-scale maps from the U.S. Geological Survey (USGS);
+thus it is NOT suitable for high-precision measurement applications
+such as engineering problems, property transfers, or other uses
+that might require highly accurate measurements of the earth&apos;s
+surface.  The USGS 1:100,000-scale maps met national map accuracy
+standards and use coordinates defined by the North American Datum,
+1983.
+</horizpar>
+</horizpa>
+</posacc>
+<lineage>
+	<srcinfo>
+	  <srccite>
+	    <citeinfo>
+	      <origin> U.S. Department of Commerce U.S. Census Bureau
+		Geography Division
+	      </origin>
+	      <pubdate>2002</pubdate>
+	      <title>TIGER/Line Files, UA Census 2000</title>
+	      <edition>UA Census 2000</edition>
+	      <serinfo>
+		<sername>TIGER/Line Files</sername>
+		<issue>
+		  Version (MMYY) represents the month and year
+		  file created
+		</issue>
+	      </serinfo>
+	      <pubinfo>
+		<pubplace>Washington, DC</pubplace>
+		<publish>
+		  U.S. Department of Commerce
+		  U.S. Census Bureau
+		  Geography Division
+		</publish>
+	      </pubinfo>
+	    </citeinfo>
+	  </srccite>
+	  <typesrc>On line</typesrc>
+	  <srctime>
+	    <timeinfo>
+	      <sngdate>
+		<caldate>2002</caldate>
+	      </sngdate>
+	    </timeinfo>
+	    <srccurr>
+	      Date the file was made available to create extracts.
+	    </srccurr>
+	  </srctime>
+	  <srccitea>TIGER</srccitea>
+	  <srccontr>
+	    Selected geographic and cartographic information (line segments)
+	    from the Census TIGER database.
+	  </srccontr>
+	</srcinfo>
+	<procstep>
+	  <procdesc>
+	    TIGER data files were subsetted reprojected and
+	    reformatted to ESRI Shapefile format.  The process used
+	    GDAL software, specifically, ogr2ogr available at
+	    &lt;URL:http://www.remotesensing.org&gt;.
+	  </procdesc>
+	  <srcused>TIGER</srcused>
+	  <procdate>2002</procdate>
+	</procstep>
+      </lineage>
+    </attracc>
+  </dataqual>
+
+<!-- Spatial Domain Information in the PRJ file -->
+<!-- Spatial Reference Information in PRJ file -->
+
+  <eainfo>
+    <overview>
+      <eaover>
+	These are subset attributes from the TIGER/Line Files for
+	transportation line features.
+      </eaover>
+      <eadetcit>
+U.S. Census Bureau, TIGER/Line files, UA Census 2000 Technical
+Documentation.  The TIGER/Line documentation defines the terms and
+definitions used within the files.
+</eadetcit>
+</overview>
+</eainfo>
+
+      <distinfo>
+	<distrib>
+	  <cntinfo>
+	    <cntorgp>
+	      <cntorg>California Spatial Information Library</cntorg>
+	    </cntorgp>
+	    <cntaddr>
+	      <addrtype>mailing address</addrtype>
+	      <address>900 N. Street</address>
+	      <city>Sacramento</city>
+	      <state>CA</state>
+	      <postal></postal>
+	    </cntaddr>
+	    <cntvoice>916 653 9990</cntvoice>
+	    <cntemail>casil@gis.ca.gov</cntemail>
+	    
+	    <cntinst>CaSIL URL:http://gis.ca.gov/ is providing this
+	      dataset via an online option not offered by the
+	      U. S. Census Bureau.
+	    </cntinst>
+    </cntinfo>
+  </distrib>
+<resdesc>UA Census 2000 Transportation</resdesc>
+<distliab>
+  Although these data have been processed successfully on a computer
+  system at the California Spatial Information Library, CaSIL, no
+  warranty expressed or implied is made by CaSIL regarding
+  the utility of the data on any other system, nor shall the act of
+  distribution constitute any such warranty.
+
+  No warranty, expressed or implied is made and no liability is
+  assumed by the U.S. Government in general or the U.S. Census Bureau
+  in specific as to the positional or attribute accuracy of the data.
+  The act of distribution shall not constitute any such warranty and
+  no responsibility is assumed by the U.S.  Government in the use of
+  these files.
+	</distliab>
+	<stdorder>
+	  <digform>
+	    <digtinfo>
+	      <formname>ESRI Shapefile</formname>
+	      <formvern>UA Census 2000</formvern>
+	      <formverd>2000</formverd>
+              <transize>109M local_roads.dbf, 4.0K local_roads.prj, 212M local_roads.shp, 15M local_roads.shx</transize>
+	      <filedec>GNU Tar</filedec>
+	    </digtinfo>
+	    <digtopt>
+	      <onlinopt>
+		<computer>
+		  <networka>
+		    <networkr>www.gis.ca.gov</networkr>
+		  </networka>
+		</computer>
+	      </onlinopt>
+	    </digtopt>
+	  </digform>
+	  <fees>The online copy of the data set (when available
+	electronically) may be accessed without charge.</fees>
+	</stdorder>
+  </distinfo>
+    <metainfo>
+      <metd>2002-06-01</metd>
+      <metc>
+	<cntinfo>
+	  <cntorgp>
+	    <cntorg>California Spatial Information Library</cntorg>
+	  </cntorgp>
+	  <cntaddr>
+	    <addrtype>mailing address</addrtype>
+	    <address>900 N. Street</address>
+	    <city>Sacramento</city>
+	    <state>CA</state>
+	    <postal></postal>
+	  </cntaddr>
+	  <cntvoice>916 653 9990</cntvoice>
+	  <cntemail>casil@gis.ca.gov</cntemail>
+	</cntinfo>
+      </metc>
+      
+      <metstdn>Content Standards for Digital Geospatial
+	Metadata</metstdn>
+      
+      <metstdv>FGDC-STD-001-1998</metstdv>
+    </metainfo>
+ </metadata>
+

@@ -1,0 +1,16 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 9
+    ID Integer ;
+    Name Char (75) ;
+    Primary_Commodity Char (12) ;
+    Supporting_Elements Char (50) ;
+    BCL_Anomaly Char (50) ;
+    PC_Anomaly Char (25) ;
+    Missing_Elements Char (75) ;
+    Comments Char (75) ;
+    Ranking Char (12) ;

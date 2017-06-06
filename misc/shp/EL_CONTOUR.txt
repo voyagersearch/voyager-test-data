@@ -1,0 +1,3 @@
+a file!
+
+should be its own result
