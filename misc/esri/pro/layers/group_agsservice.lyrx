@@ -1,0 +1,1532 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.2.0",
+  "build" : 49743,
+  "layers" : [
+    "CIMPATH=map/new_group_layer.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "Shipwrecks (WAM-002)",
+      "uRI" : "CIMPATH=map/shipwrecks__wam_002_.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/01837bfe4f4a4167a1aea2228ee5a97f.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "featureElevationExpression" : "0",
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "displayField" : "name",
+        "editable" : true,
+        "dataConnection" : {
+          "type" : "CIMStandardDataConnection",
+          "workspaceConnectionString" : "URL=https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer",
+          "workspaceFactory" : "FeatureService",
+          "dataset" : "0",
+          "datasetType" : "esriDTFeatureClass"
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "htmlPopupEnabled" : true,
+      "selectable" : true,
+      "featureCacheType" : "Session",
+      "displayFiltersType" : "ByScale",
+      "featureBlendingMode" : "Alpha",
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expressionTitle" : "Custom",
+          "expression" : "$feature.name",
+          "expressionEngine" : "Arcade",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "maplexLabelPlacementProperties" : {
+            "type" : "CIMMaplexLabelPlacementProperties",
+            "featureType" : "Point",
+            "avoidPolygonHoles" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : true,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
+            "centerLabelAnchorType" : "Symbol",
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "enablePointPlacementPriorities" : true,
+            "featureWeight" : 0,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
+            "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
+            "labelBuffer" : 15,
+            "labelLargestPolygon" : true,
+            "labelPriority" : -1,
+            "labelStackingProperties" : {
+              "type" : "CIMMaplexLabelStackingProperties",
+              "stackAlignment" : "ChooseBest",
+              "maximumNumberOfLines" : 3,
+              "minimumNumberOfCharsPerLine" : 3,
+              "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ],
+              "trimStackingSeparators" : true
+            },
+            "lineFeatureType" : "General",
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 36,
+            "maximumLabelOverrunUnit" : "Point",
+            "minimumFeatureSizeUnit" : "Map",
+            "multiPartOption" : "OneLabelPerPart",
+            "offsetAlongLineProperties" : {
+              "type" : "CIMMaplexOffsetAlongLineProperties",
+              "placementMethod" : "BestPositionAlongLine",
+              "labelAnchorPoint" : "CenterOfLabel",
+              "distanceUnit" : "Percentage",
+              "useLineDirection" : true
+            },
+            "pointExternalZonePriorities" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "polygonAnchorPointType" : "GeometricCenter",
+            "polygonBoundaryWeight" : 0,
+            "polygonExternalZones" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "polygonFeatureType" : "General",
+            "polygonInternalZones" : {
+              "type" : "CIMMaplexInternalZonePriorities",
+              "center" : 1
+            },
+            "polygonPlacementMethod" : "CurvedInPolygon",
+            "primaryOffset" : 1,
+            "primaryOffsetUnit" : "Point",
+            "removeAmbiguousLabels" : "All",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Point",
+            "rotationProperties" : {
+              "type" : "CIMMaplexRotationProperties",
+              "rotationType" : "Arithmetic",
+              "alignmentType" : "Straight"
+            },
+            "secondaryOffset" : 100,
+            "secondaryOffsetUnit" : "Percentage",
+            "strategyPriorities" : {
+              "type" : "CIMMaplexStrategyPriorities",
+              "stacking" : 1,
+              "overrun" : 2,
+              "fontCompression" : 3,
+              "fontReduction" : 4,
+              "abbreviation" : 5
+            },
+            "thinningDistanceUnit" : "Point",
+            "truncationMarkerCharacter" : ".",
+            "truncationMinimumLength" : 1,
+            "truncationPreferredCharacters" : "aeiou",
+            "truncationExcludedCharacters" : "0123456789",
+            "polygonAnchorPointPerimeterInsetUnit" : "Point"
+          },
+          "name" : "Class 1",
+          "priority" : -1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Line",
+            "featureWeight" : "None",
+            "labelWeight" : "High",
+            "numLabelsOption" : "OneLabelPerName",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal"
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "depth3D" : 1,
+              "extrapolateBaselines" : true,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Tahoma",
+              "fontStyleName" : "Regular",
+              "fontType" : "Unspecified",
+              "haloSize" : 1,
+              "height" : 10,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Left",
+              "kerning" : true,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Bottom",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            }
+          },
+          "useCodedValue" : true,
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "renderer" : {
+        "type" : "CIMSimpleRenderer",
+        "sampleSize" : 10000,
+        "patch" : "Default",
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPointSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMVectorMarker",
+                "enable" : true,
+                "anchorPoint" : {
+                  "x" : -0.0019518719521926841,
+                  "y" : 0
+                },
+                "anchorPointUnits" : "Relative",
+                "dominantSizeAxis3D" : "Y",
+                "size" : 20,
+                "billboardMode3D" : "FaceNearPlane",
+                "frame" : {
+                  "xmin" : -347,
+                  "ymin" : -300,
+                  "xmax" : 350,
+                  "ymax" : 300
+                },
+                "markerGraphics" : [
+                  {
+                    "type" : "CIMMarkerGraphic",
+                    "geometry" : {
+                      "rings" : [
+                        [
+                          [
+                            -23,
+                            -186
+                          ],
+                          [
+                            -22,
+                            -194
+                          ],
+                          [
+                            -20,
+                            -202
+                          ],
+                          [
+                            -16,
+                            -209
+                          ],
+                          [
+                            -11,
+                            -215
+                          ],
+                          [
+                            -5,
+                            -221
+                          ],
+                          [
+                            1,
+                            -225
+                          ],
+                          [
+                            8,
+                            -227
+                          ],
+                          [
+                            16,
+                            -228
+                          ],
+                          [
+                            24,
+                            -227
+                          ],
+                          [
+                            32,
+                            -225
+                          ],
+                          [
+                            38,
+                            -221
+                          ],
+                          [
+                            44,
+                            -215
+                          ],
+                          [
+                            49,
+                            -209
+                          ],
+                          [
+                            53,
+                            -202
+                          ],
+                          [
+                            55,
+                            -194
+                          ],
+                          [
+                            56,
+                            -186
+                          ],
+                          [
+                            56,
+                            -185
+                          ],
+                          [
+                            -23,
+                            -185
+                          ],
+                          [
+                            -23,
+                            -186
+                          ]
+                        ],
+                        [
+                          [
+                            -132,
+                            236
+                          ],
+                          [
+                            -130,
+                            235
+                          ],
+                          [
+                            -127,
+                            233
+                          ],
+                          [
+                            -125,
+                            230
+                          ],
+                          [
+                            -120,
+                            223
+                          ],
+                          [
+                            -115,
+                            213
+                          ],
+                          [
+                            -25,
+                            6
+                          ],
+                          [
+                            -12,
+                            -21
+                          ],
+                          [
+                            -2,
+                            -44
+                          ],
+                          [
+                            2,
+                            -55
+                          ],
+                          [
+                            5,
+                            -63
+                          ],
+                          [
+                            8,
+                            -68
+                          ],
+                          [
+                            11,
+                            -71
+                          ],
+                          [
+                            241,
+                            21
+                          ],
+                          [
+                            204,
+                            -155
+                          ],
+                          [
+                            266,
+                            -155
+                          ],
+                          [
+                            270,
+                            -155
+                          ],
+                          [
+                            272,
+                            -155
+                          ],
+                          [
+                            275,
+                            -157
+                          ],
+                          [
+                            277,
+                            -158
+                          ],
+                          [
+                            278,
+                            -160
+                          ],
+                          [
+                            279,
+                            -163
+                          ],
+                          [
+                            280,
+                            -170
+                          ],
+                          [
+                            279,
+                            -176
+                          ],
+                          [
+                            278,
+                            -179
+                          ],
+                          [
+                            277,
+                            -181
+                          ],
+                          [
+                            275,
+                            -182
+                          ],
+                          [
+                            272,
+                            -184
+                          ],
+                          [
+                            270,
+                            -184
+                          ],
+                          [
+                            266,
+                            -185
+                          ],
+                          [
+                            67,
+                            -185
+                          ],
+                          [
+                            67,
+                            -185
+                          ],
+                          [
+                            66,
+                            -195
+                          ],
+                          [
+                            64,
+                            -200
+                          ],
+                          [
+                            63,
+                            -205
+                          ],
+                          [
+                            61,
+                            -209
+                          ],
+                          [
+                            58,
+                            -213
+                          ],
+                          [
+                            52,
+                            -221
+                          ],
+                          [
+                            44,
+                            -228
+                          ],
+                          [
+                            40,
+                            -230
+                          ],
+                          [
+                            35,
+                            -232
+                          ],
+                          [
+                            31,
+                            -234
+                          ],
+                          [
+                            26,
+                            -235
+                          ],
+                          [
+                            16,
+                            -236
+                          ],
+                          [
+                            6,
+                            -235
+                          ],
+                          [
+                            1,
+                            -234
+                          ],
+                          [
+                            -4,
+                            -232
+                          ],
+                          [
+                            -13,
+                            -228
+                          ],
+                          [
+                            -20,
+                            -221
+                          ],
+                          [
+                            -26,
+                            -214
+                          ],
+                          [
+                            -31,
+                            -205
+                          ],
+                          [
+                            -33,
+                            -200
+                          ],
+                          [
+                            -34,
+                            -196
+                          ],
+                          [
+                            -35,
+                            -190
+                          ],
+                          [
+                            -35,
+                            -185
+                          ],
+                          [
+                            -35,
+                            -185
+                          ],
+                          [
+                            -266,
+                            -185
+                          ],
+                          [
+                            -269,
+                            -184
+                          ],
+                          [
+                            -271,
+                            -184
+                          ],
+                          [
+                            -273,
+                            -182
+                          ],
+                          [
+                            -275,
+                            -181
+                          ],
+                          [
+                            -276,
+                            -179
+                          ],
+                          [
+                            -277,
+                            -176
+                          ],
+                          [
+                            -278,
+                            -170
+                          ],
+                          [
+                            -277,
+                            -163
+                          ],
+                          [
+                            -276,
+                            -160
+                          ],
+                          [
+                            -275,
+                            -158
+                          ],
+                          [
+                            -273,
+                            -157
+                          ],
+                          [
+                            -271,
+                            -155
+                          ],
+                          [
+                            -269,
+                            -155
+                          ],
+                          [
+                            -266,
+                            -155
+                          ],
+                          [
+                            -199,
+                            -155
+                          ],
+                          [
+                            -17,
+                            -83
+                          ],
+                          [
+                            -60,
+                            13
+                          ],
+                          [
+                            -118,
+                            146
+                          ],
+                          [
+                            -123,
+                            156
+                          ],
+                          [
+                            -128,
+                            169
+                          ],
+                          [
+                            -139,
+                            197
+                          ],
+                          [
+                            -144,
+                            205
+                          ],
+                          [
+                            -147,
+                            212
+                          ],
+                          [
+                            -149,
+                            217
+                          ],
+                          [
+                            -150,
+                            221
+                          ],
+                          [
+                            -150,
+                            225
+                          ],
+                          [
+                            -149,
+                            228
+                          ],
+                          [
+                            -148,
+                            230
+                          ],
+                          [
+                            -146,
+                            232
+                          ],
+                          [
+                            -144,
+                            234
+                          ],
+                          [
+                            -142,
+                            235
+                          ],
+                          [
+                            -139,
+                            236
+                          ],
+                          [
+                            -135,
+                            236
+                          ],
+                          [
+                            -132,
+                            236
+                          ]
+                        ]
+                      ]
+                    },
+                    "symbol" : {
+                      "type" : "CIMPolygonSymbol",
+                      "symbolLayers" : [
+                        {
+                          "type" : "CIMSolidFill",
+                          "enable" : true,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              255,
+                              0,
+                              0,
+                              100
+                            ]
+                          }
+                        }
+                      ],
+                      "angleAlignment" : "Map"
+                    }
+                  }
+                ],
+                "scaleSymbolsProportionally" : true,
+                "respectFrame" : true
+              },
+              {
+                "type" : "CIMVectorMarker",
+                "enable" : true,
+                "anchorPoint" : {
+                  "x" : -0.098528457687397125,
+                  "y" : 0.007212540742892324
+                },
+                "anchorPointUnits" : "Relative",
+                "dominantSizeAxis3D" : "Y",
+                "size" : 20,
+                "billboardMode3D" : "FaceNearPlane",
+                "frame" : {
+                  "xmin" : -241,
+                  "ymin" : -300,
+                  "xmax" : 359,
+                  "ymax" : 300
+                },
+                "markerGraphics" : [
+                  {
+                    "type" : "CIMMarkerGraphic",
+                    "geometry" : {
+                      "rings" : [
+                        [
+                          [
+                            8.4000000000000004,
+                            40.8999999999999986
+                          ],
+                          [
+                            1.2,
+                            38.6000000000000014
+                          ],
+                          [
+                            -5.4000000000000004,
+                            34.7999999999999972
+                          ],
+                          [
+                            -11.4,
+                            29.3999999999999986
+                          ],
+                          [
+                            -16.3999999999999986,
+                            22.8999999999999986
+                          ],
+                          [
+                            -19.8999999999999986,
+                            15.8000000000000007
+                          ],
+                          [
+                            -22.1000000000000014,
+                            8.0999999999999996
+                          ],
+                          [
+                            -22.8000000000000007,
+                            -0.29999999999999999
+                          ],
+                          [
+                            -22.1000000000000014,
+                            -8.6999999999999993
+                          ],
+                          [
+                            -19.8999999999999986,
+                            -16.3999999999999986
+                          ],
+                          [
+                            -16.3999999999999986,
+                            -23.5
+                          ],
+                          [
+                            -11.4,
+                            -30
+                          ],
+                          [
+                            -5.4000000000000004,
+                            -35.3999999999999986
+                          ],
+                          [
+                            1.2,
+                            -39.2000000000000028
+                          ],
+                          [
+                            8.4000000000000004,
+                            -41.5
+                          ],
+                          [
+                            16.1999999999999993,
+                            -42.2999999999999972
+                          ],
+                          [
+                            24.3000000000000007,
+                            -41.5
+                          ],
+                          [
+                            31.6999999999999993,
+                            -39.2000000000000028
+                          ],
+                          [
+                            38.3999999999999986,
+                            -35.3999999999999986
+                          ],
+                          [
+                            44.3999999999999986,
+                            -30
+                          ],
+                          [
+                            49.3999999999999986,
+                            -23.5
+                          ],
+                          [
+                            52.8999999999999986,
+                            -16.3999999999999986
+                          ],
+                          [
+                            55.1000000000000014,
+                            -8.6999999999999993
+                          ],
+                          [
+                            55.7999999999999972,
+                            -0.29999999999999999
+                          ],
+                          [
+                            55.1000000000000014,
+                            8.0999999999999996
+                          ],
+                          [
+                            52.8999999999999986,
+                            15.8000000000000007
+                          ],
+                          [
+                            49.3999999999999986,
+                            22.8999999999999986
+                          ],
+                          [
+                            44.3999999999999986,
+                            29.3999999999999986
+                          ],
+                          [
+                            38.3999999999999986,
+                            34.7999999999999972
+                          ],
+                          [
+                            31.6999999999999993,
+                            38.6000000000000014
+                          ],
+                          [
+                            24.3000000000000007,
+                            40.8999999999999986
+                          ],
+                          [
+                            16.1999999999999993,
+                            41.7000000000000028
+                          ],
+                          [
+                            8.4000000000000004,
+                            40.8999999999999986
+                          ]
+                        ],
+                        [
+                          [
+                            20.8999999999999986,
+                            50.5
+                          ],
+                          [
+                            26,
+                            49.7000000000000028
+                          ],
+                          [
+                            30.8999999999999986,
+                            48.5
+                          ],
+                          [
+                            35.7000000000000028,
+                            46.7999999999999972
+                          ],
+                          [
+                            44.3999999999999986,
+                            42.1000000000000014
+                          ],
+                          [
+                            51.8999999999999986,
+                            36
+                          ],
+                          [
+                            58,
+                            28.5
+                          ],
+                          [
+                            62.7000000000000028,
+                            19.8000000000000007
+                          ],
+                          [
+                            65.5999999999999943,
+                            10.3000000000000007
+                          ],
+                          [
+                            66.5999999999999943,
+                            0.29999999999999999
+                          ],
+                          [
+                            65.7000000000000028,
+                            -9.8000000000000007
+                          ],
+                          [
+                            64.5,
+                            -14.6
+                          ],
+                          [
+                            62.7999999999999972,
+                            -19.1999999999999993
+                          ],
+                          [
+                            60.7000000000000028,
+                            -23.6000000000000014
+                          ],
+                          [
+                            58.2000000000000028,
+                            -27.8000000000000007
+                          ],
+                          [
+                            51.6000000000000014,
+                            -35.7000000000000028
+                          ],
+                          [
+                            43.7000000000000028,
+                            -42.2999999999999972
+                          ],
+                          [
+                            39.5,
+                            -44.7999999999999972
+                          ],
+                          [
+                            35.1000000000000014,
+                            -46.8999999999999986
+                          ],
+                          [
+                            30.5,
+                            -48.6000000000000014
+                          ],
+                          [
+                            25.6999999999999993,
+                            -49.7999999999999972
+                          ],
+                          [
+                            15.6,
+                            -50.7000000000000028
+                          ],
+                          [
+                            5.5999999999999996,
+                            -49.7000000000000028
+                          ],
+                          [
+                            0.80000000000000004,
+                            -48.5
+                          ],
+                          [
+                            -3.8999999999999999,
+                            -46.7999999999999972
+                          ],
+                          [
+                            -12.6,
+                            -42.1000000000000014
+                          ],
+                          [
+                            -20.1000000000000014,
+                            -36
+                          ],
+                          [
+                            -26.3000000000000007,
+                            -28.5
+                          ],
+                          [
+                            -30.8999999999999986,
+                            -19.8000000000000007
+                          ],
+                          [
+                            -32.6000000000000014,
+                            -15.1
+                          ],
+                          [
+                            -33.7999999999999972,
+                            -10.1
+                          ],
+                          [
+                            -34.6000000000000014,
+                            -5
+                          ],
+                          [
+                            -34.7999999999999972,
+                            0.29999999999999999
+                          ],
+                          [
+                            -33.8999999999999986,
+                            10.4
+                          ],
+                          [
+                            -31.1000000000000014,
+                            19.6999999999999993
+                          ],
+                          [
+                            -26.5,
+                            28.3000000000000007
+                          ],
+                          [
+                            -20.1000000000000014,
+                            36
+                          ],
+                          [
+                            -12.4,
+                            42.3999999999999986
+                          ],
+                          [
+                            -3.7999999999999998,
+                            47
+                          ],
+                          [
+                            5.5,
+                            49.7999999999999972
+                          ],
+                          [
+                            15.6,
+                            50.7000000000000028
+                          ],
+                          [
+                            20.8999999999999986,
+                            50.5
+                          ]
+                        ]
+                      ]
+                    },
+                    "symbol" : {
+                      "type" : "CIMPolygonSymbol",
+                      "symbolLayers" : [
+                        {
+                          "type" : "CIMSolidFill",
+                          "enable" : true,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              232,
+                              190,
+                              255,
+                              100
+                            ]
+                          }
+                        }
+                      ],
+                      "angleAlignment" : "Map"
+                    }
+                  }
+                ],
+                "scaleSymbolsProportionally" : true,
+                "respectFrame" : true
+              }
+            ],
+            "haloSize" : 1,
+            "scaleX" : 1,
+            "angleAlignment" : "Map"
+          }
+        }
+      },
+      "scaleSymbols" : true,
+      "snappable" : true
+    },
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "WA Tomorrow Report 11 - SA2 Forecasts (DPLH-086)",
+      "uRI" : "CIMPATH=map/wa_tomorrow_report_11___sa2_forecasts__dplh_086_.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "metadataURI" : "CIMPATH=Metadata/f98259b0f180a4cf51dc412ff243264d.xml",
+      "useSourceMetadata" : true,
+      "description" : "WA Tomorrow is a series of population forecasts for the State of Western Australia based on historical trends. The forecasts represent the best estimate of future population size if trends in fertility, mortality and migration continue.\n\nWA Tomorrow uses a hybrid geography, but reflects as closely as possible the current Australian Statistical Geography Standard (ASGS) 2016, produced by the Australian Bureau of Statistics (ABS) (See Geography tab). The forecasts refer to the 30 June in each stated year.\n\nWA Tomorrow includes a forecast range (A to E), indicating five probable futures. A and B contain the lower forecasts, C is the median forecast and D and E represent the higher forecasts. For the user who requires the best estimate of future population size, C should be used.\n\nPlease refer to the WA Tomorrow Summary Report for more information.\n\nLicense: Creative Commons Attribution Non-Commercial 4.0\n\nTags: WA Tomorrow, demography, forecast, population\n\nContact: spatialdata@dplh.wa.gov.au",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/01837bfe4f4a4167a1aea2228ee5a97f.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "featureElevationExpression" : "0",
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "displayField" : "sa2_region",
+        "editable" : true,
+        "dataConnection" : {
+          "type" : "CIMStandardDataConnection",
+          "workspaceConnectionString" : "URL=https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer",
+          "workspaceFactory" : "FeatureService",
+          "dataset" : "14",
+          "datasetType" : "esriDTFeatureClass"
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "htmlPopupEnabled" : true,
+      "selectable" : true,
+      "featureCacheType" : "Session",
+      "displayFiltersType" : "ByScale",
+      "featureBlendingMode" : "Alpha",
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expressionTitle" : "Custom",
+          "expression" : "$feature.sa2_region",
+          "expressionEngine" : "Arcade",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "maplexLabelPlacementProperties" : {
+            "type" : "CIMMaplexLabelPlacementProperties",
+            "featureType" : "Polygon",
+            "avoidPolygonHoles" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : true,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
+            "centerLabelAnchorType" : "Symbol",
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "featureWeight" : 0,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
+            "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
+            "labelBuffer" : 15,
+            "labelLargestPolygon" : true,
+            "labelPriority" : -1,
+            "labelStackingProperties" : {
+              "type" : "CIMMaplexLabelStackingProperties",
+              "stackAlignment" : "ChooseBest",
+              "maximumNumberOfLines" : 3,
+              "minimumNumberOfCharsPerLine" : 3,
+              "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ],
+              "trimStackingSeparators" : true
+            },
+            "lineFeatureType" : "General",
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 80,
+            "maximumLabelOverrunUnit" : "Point",
+            "measureFromClippedFeatureGeometry" : true,
+            "minimumFeatureSizeUnit" : "Map",
+            "multiPartOption" : "OneLabelPerPart",
+            "offsetAlongLineProperties" : {
+              "type" : "CIMMaplexOffsetAlongLineProperties",
+              "placementMethod" : "BestPositionAlongLine",
+              "labelAnchorPoint" : "CenterOfLabel",
+              "distanceUnit" : "Percentage",
+              "useLineDirection" : true
+            },
+            "pointExternalZonePriorities" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "polygonAnchorPointType" : "GeometricCenter",
+            "polygonBoundaryWeight" : 0,
+            "polygonExternalZones" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "polygonFeatureType" : "General",
+            "polygonInternalZones" : {
+              "type" : "CIMMaplexInternalZonePriorities",
+              "center" : 1
+            },
+            "polygonPlacementMethod" : "HorizontalInPolygon",
+            "primaryOffset" : 1,
+            "primaryOffsetUnit" : "Point",
+            "removeAmbiguousLabels" : "All",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Point",
+            "rotationProperties" : {
+              "type" : "CIMMaplexRotationProperties",
+              "rotationType" : "Arithmetic",
+              "alignmentType" : "Straight"
+            },
+            "secondaryOffset" : 100,
+            "secondaryOffsetUnit" : "Percentage",
+            "strategyPriorities" : {
+              "type" : "CIMMaplexStrategyPriorities",
+              "stacking" : 1,
+              "overrun" : 2,
+              "fontCompression" : 3,
+              "fontReduction" : 4,
+              "abbreviation" : 5
+            },
+            "thinningDistanceUnit" : "Point",
+            "truncationMarkerCharacter" : ".",
+            "truncationMinimumLength" : 1,
+            "truncationPreferredCharacters" : "aeiou",
+            "truncationExcludedCharacters" : "0123456789",
+            "polygonAnchorPointPerimeterInsetUnit" : "Point"
+          },
+          "name" : "Class 1",
+          "priority" : -1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Line",
+            "featureWeight" : "None",
+            "labelWeight" : "High",
+            "numLabelsOption" : "OneLabelPerName",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal"
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "depth3D" : 1,
+              "extrapolateBaselines" : true,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Tahoma",
+              "fontStyleName" : "Regular",
+              "fontType" : "Unspecified",
+              "haloSize" : 1,
+              "height" : 10,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Left",
+              "kerning" : true,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Bottom",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            }
+          },
+          "useCodedValue" : true,
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "renderer" : {
+        "type" : "CIMSimpleRenderer",
+        "sampleSize" : 10000,
+        "patch" : "Default",
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPolygonSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 0.40000000000000002,
+                "height3D" : 1,
+                "anchor3D" : "Center",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    0,
+                    0,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMSolidFill",
+                "enable" : true,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    234,
+                    190,
+                    100
+                  ]
+                }
+              }
+            ],
+            "angleAlignment" : "Map"
+          }
+        }
+      },
+      "scaleSymbols" : false,
+      "snappable" : true
+    },
+    {
+      "type" : "CIMGroupLayer",
+      "name" : "Services Group Layer",
+      "uRI" : "CIMPATH=map/new_group_layer.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "metadataURI" : "CIMPATH=Metadata/8088ae335ce47663b70946706deffc67.xml",
+      "useSourceMetadata" : true,
+      "description" : "New Group Layer",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/01837bfe4f4a4167a1aea2228ee5a97f.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "sublayerVisibilityMode" : "Independent",
+      "layers" : [
+        "CIMPATH=map/shipwrecks__wam_002_.json",
+        "CIMPATH=map/wa_tomorrow_report_11___sa2_forecasts__dplh_086_.json"
+      ]
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/8088ae335ce47663b70946706deffc67.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240227</CreaDate><CreaTime>12563300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>New Group Layer</resTitle></idCitation></dataIdInfo></metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/f98259b0f180a4cf51dc412ff243264d.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240228</CreaDate><CreaTime>09242200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>WA Tomorrow Report 11 - SA2 Forecasts (DPLH-086)</resTitle></idCitation><idAbs>WA Tomorrow is a series of population forecasts for the State of Western Australia based on historical trends. The forecasts represent the best estimate of future population size if trends in fertility, mortality and migration continue.\r\n\r\nWA Tomorrow uses a hybrid geography, but reflects as closely as possible the current Australian Statistical Geography Standard (ASGS) 2016, produced by the Australian Bureau of Statistics (ABS) (See Geography tab). The forecasts refer to the 30 June in each stated year.\r\n\r\nWA Tomorrow includes a forecast range (A to E), indicating five probable futures. A and B contain the lower forecasts, C is the median forecast and D and E represent the higher forecasts. For the user who requires the best estimate of future population size, C should be used.\r\n\r\nPlease refer to the WA Tomorrow Summary Report for more information.\r\n\r\nLicense: Creative Commons Attribution Non-Commercial 4.0\r\n\r\nTags: WA Tomorrow, demography, forecast, population\r\n\r\nContact: spatialdata@dplh.wa.gov.au</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/01837bfe4f4a4167a1aea2228ee5a97f.json",
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
