@@ -14,7 +14,7 @@
         "type" : "TimeInstant"
       },
       "metadataURI" : "CIMPATH=Metadata/f98259b0f180a4cf51dc412ff243264d.xml",
-      "useSourceMetadata" : true,
+      "useSourceMetadata" : false,
       "description" : "WA Tomorrow is a series of population forecasts for the State of Western Australia based on historical trends. The forecasts represent the best estimate of future population size if trends in fertility, mortality and migration continue.\n\nWA Tomorrow uses a hybrid geography, but reflects as closely as possible the current Australian Statistical Geography Standard (ASGS) 2016, produced by the Australian Bureau of Statistics (ABS) (See Geography tab). The forecasts refer to the 30 June in each stated year.\n\nWA Tomorrow includes a forecast range (A to E), indicating five probable futures. A and B contain the lower forecasts, C is the median forecast and D and E represent the higher forecasts. For the user who requires the best estimate of future population size, C should be used.\n\nPlease refer to the WA Tomorrow Summary Report for more information.\n\nLicense: Creative Commons Attribution Non-Commercial 4.0\n\nTags: WA Tomorrow, demography, forecast, population\n\nContact: spatialdata@dplh.wa.gov.au",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
