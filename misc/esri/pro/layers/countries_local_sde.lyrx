@@ -41,7 +41,7 @@
           "type" : "CIMSqlQueryDataConnection",
           "workspaceConnectionString" : "ENCRYPTED_PASSWORD_UTF8=00022e686a754275784f48496741495a396e58566f5377544f58684f68706168505a336f515956494d62636e4463413d2a00;ENCRYPTED_PASSWORD=00022e68424f4a503541347a322f64384b47314175416d57555a7944327a636534486547356f61756a6c4c665678493d2a00;SERVER=localhost;INSTANCE=sde:postgresql:localhost;DBCLIENT=postgresql;DB_CONNECTION_PROPERTIES=localhost;DATABASE=testdata;USER=voyager;AUTHENTICATION_MODE=DBMS",
           "workspaceFactory" : "SDE",
-          "dataset" : "testdata.public.%countries_15",
+          "dataset" : "testdata.public.countries",
           "datasetType" : "esriDTFeatureClass",
           "sqlQuery" : "select gid,objectid,fips_cntry,gmi_cntry,iso_2digit,iso_3digit,iso_num,cntry_name,long_name,isoshrtnam,unshrtnam,locshrtnam,loclngnam,status,pop2005,sqkm,sqmi,colormap,geom from testdata.public.countries",
           "srid" : "-1",
