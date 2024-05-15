@@ -7,17 +7,45 @@
   ],
   "layerDefinitions" : [
     {
+      "type" : "CIMGroupLayer",
+      "name" : "Group Layer Level 2",
+      "uRI" : "CIMPATH=map/new_group_layer2.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "metadataURI" : "CIMPATH=Metadata/470bdc209430e8793229cc6995bad402.xml",
+      "useSourceMetadata" : true,
+      "description" : "New Group Layer",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/961cbb52f7fc4aa89db14f3bfb805022.json"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "sublayerVisibilityMode" : "Independent"
+    },
+    {
       "type" : "CIMFeatureLayer",
       "name" : "hydrography_lines",
       "uRI" : "CIMPATH=map/hydrography_lines.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
+      "metadataURI" : "CIMPATH=Metadata/ea6ccd7569ad006dafd4ed1cd1bfe66e.xml",
       "useSourceMetadata" : true,
       "description" : "hydrography_lines",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/24b413b8f5bf4bbba5f134213b2690d9.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/961cbb52f7fc4aa89db14f3bfb805022.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -314,11 +342,12 @@
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
+      "metadataURI" : "CIMPATH=Metadata/d6d4ca090a7038f6e0bcc1a21d6c141d.xml",
       "useSourceMetadata" : true,
       "description" : "world_cities",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/24b413b8f5bf4bbba5f134213b2690d9.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/961cbb52f7fc4aa89db14f3bfb805022.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -687,7 +716,7 @@
       "description" : "New Group Layer",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/24b413b8f5bf4bbba5f134213b2690d9.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/961cbb52f7fc4aa89db14f3bfb805022.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -703,6 +732,7 @@
       "allowDrapingOnIntegratedMesh" : true,
       "sublayerVisibilityMode" : "Independent",
       "layers" : [
+        "CIMPATH=map/new_group_layer2.json",
         "CIMPATH=map/hydrography_lines.json",
         "CIMPATH=map/world_cities.json"
       ]
@@ -713,6 +743,21 @@
       "type" : "CIMBinaryReference",
       "uRI" : "CIMPATH=Metadata/18e2a3ff4cd00d1bdba229775ceecef8.xml",
       "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240514</CreaDate><CreaTime>10391400</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><scaleRange><minScale>150000000</minScale><maxScale>5000</maxScale></scaleRange><ArcGISProfile>ItemDescription</ArcGISProfile></Esri><dataIdInfo><idCitation><resTitle>New Group Layer</resTitle></idCitation><idAbs>&lt;DIV STYLE=\"text-align:Left;\"&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;New Group Layer&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs><idPurp>Group layer with metadata</idPurp><searchKeys><keyword>group</keyword><keyword>metadata</keyword></searchKeys></dataIdInfo><mdHrLv><ScopeCd value=\"005\"></ScopeCd></mdHrLv><mdDateSt Sync=\"TRUE\">20240514</mdDateSt></metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/470bdc209430e8793229cc6995bad402.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240515</CreaDate><CreaTime>19142800</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><scaleRange><minScale>150000000</minScale><maxScale>5000</maxScale></scaleRange><ArcGISProfile>ItemDescription</ArcGISProfile></Esri><dataIdInfo><idCitation><resTitle>New Group Layer</resTitle></idCitation><idAbs>&lt;DIV STYLE=\"text-align:Left;\"&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;New Group Layer&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs><idPurp>New Group Layer with metadata living inside other group level with metadata</idPurp><searchKeys><keyword>group</keyword><keyword>layer</keyword></searchKeys></dataIdInfo><mdHrLv><ScopeCd value=\"005\"></ScopeCd></mdHrLv><mdDateSt Sync=\"TRUE\">20240515</mdDateSt></metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/d6d4ca090a7038f6e0bcc1a21d6c141d.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240515</CreaDate><CreaTime>19142200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>world_cities</resTitle></idCitation><idAbs>world_cities</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/ea6ccd7569ad006dafd4ed1cd1bfe66e.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240515</CreaDate><CreaTime>19142200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>hydrography_lines</resTitle></idCitation><idAbs>hydrography_lines</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     }
   ],
   "rGBColorProfile" : "sRGB IEC61966-2.1",
@@ -721,7 +766,7 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/24b413b8f5bf4bbba5f134213b2690d9.json",
+      "uRI" : "CIMPATH=Map/961cbb52f7fc4aa89db14f3bfb805022.json",
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
