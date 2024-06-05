@@ -3,21 +3,21 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map4/testdata_public_countries_15.json"
+    "CIMPATH=map/pools.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "countries layer",
-      "uRI" : "CIMPATH=map4/testdata_public_countries_15.json",
+      "name" : "Pools Layer",
+      "uRI" : "CIMPATH=map/pools.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "testdata.public.countries_15",
+      "description" : "Pools",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/8b5bb3ca9bc248209e19b8b902696117.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/c9f497f7525b4ec386961f951491cb3c.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -35,249 +35,15 @@
       "featureElevationExpression" : "0",
       "featureTable" : {
         "type" : "CIMFeatureTable",
-        "displayField" : "cntry_name",
+        "displayField" : "PoolName",
         "editable" : true,
         "dataConnection" : {
-          "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "ENCRYPTED_PASSWORD_UTF8=00022e686a754275784f48496741495a396e58566f5377544f58684f68706168505a336f515956494d62636e4463413d2a00;ENCRYPTED_PASSWORD=00022e68424f4a503541347a322f64384b47314175416d57555a7944327a636534486547356f61756a6c4c665678493d2a00;SERVER=localhost;INSTANCE=sde:postgresql:localhost;DBCLIENT=postgresql;DB_CONNECTION_PROPERTIES=localhost;DATABASE=testdata;USER=voyager;AUTHENTICATION_MODE=DBMS",
-          "workspaceFactory" : "SDE",
-          "dataset" : "testdata.public.countries",
-          "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select gid,objectid,fips_cntry,gmi_cntry,iso_2digit,iso_3digit,iso_num,cntry_name,long_name,isoshrtnam,unshrtnam,locshrtnam,loclngnam,status,pop2005,sqkm,sqmi,colormap,geom from testdata.public.countries",
-          "srid" : "-1",
-          "spatialReference" : {
-            "wkid" : 4326,
-            "latestWkid" : 4326,
-            "xyTolerance" : 9.9999999999999995e-07,
-            "zTolerance" : 0.001,
-            "mTolerance" : 0.001,
-            "falseX" : -45035996.0495000035,
-            "falseY" : -45035996.0495000035,
-            "xyUnits" : 10000000,
-            "falseZ" : -100000,
-            "zUnits" : 10000,
-            "falseM" : -100000,
-            "mUnits" : 10000
-          },
-          "oIDFields" : "gid",
-          "geometryType" : "esriGeometryPolygon",
-          "extent" : {
-            "xmin" : -180,
-            "ymin" : -90,
-            "xmax" : 180.000000298023224,
-            "ymax" : 83.6041541993618011,
-            "spatialReference" : {
-              "wkid" : null,
-              "xyTolerance" : 9.9999999999999995e-07,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -45035996.0495000035,
-              "falseY" : -45035996.0495000035,
-              "xyUnits" : 10000000,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
-          "queryFields" : [
-            {
-              "name" : "gid",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : false,
-              "length" : 4,
-              "precision" : 10,
-              "scale" : 0,
-              "required" : true,
-              "editable" : false,
-              "dbmsType" : 2
-            },
-            {
-              "name" : "objectid",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : true,
-              "length" : 4,
-              "precision" : 10,
-              "scale" : 0,
-              "dbmsType" : 2
-            },
-            {
-              "name" : "fips_cntry",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 2,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "gmi_cntry",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 3,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "iso_2digit",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 2,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "iso_3digit",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 3,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "iso_num",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : true,
-              "length" : 4,
-              "precision" : 10,
-              "scale" : 0,
-              "dbmsType" : 2
-            },
-            {
-              "name" : "cntry_name",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 40,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "long_name",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 40,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "isoshrtnam",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 45,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "unshrtnam",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 55,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "locshrtnam",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 43,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "loclngnam",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 74,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "status",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 60,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "pop2005",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "sqkm",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "sqmi",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "colormap",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : true,
-              "length" : 4,
-              "precision" : 10,
-              "scale" : 0,
-              "dbmsType" : 2
-            },
-            {
-              "name" : "geom",
-              "type" : "esriFieldTypeGeometry",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "geometryDef" : {
-                "avgNumPoints" : 0,
-                "geometryType" : "esriGeometryPolygon",
-                "hasM" : false,
-                "hasZ" : false,
-                "spatialReference" : {
-                  "wkid" : 4326,
-                  "latestWkid" : 4326,
-                  "xyTolerance" : 9.9999999999999995e-07,
-                  "zTolerance" : 0.001,
-                  "mTolerance" : 0.001,
-                  "falseX" : -45035996.0495000035,
-                  "falseY" : -45035996.0495000035,
-                  "xyUnits" : 10000000,
-                  "falseZ" : -100000,
-                  "zUnits" : 10000,
-                  "falseM" : -100000,
-                  "mUnits" : 10000
-                }
-              },
-              "dbmsType" : 8
-            }
-          ],
-          "spatialStorageType" : 8,
-          "isTableBased" : true,
-          "mappedOIDFieldLength" : "OID64Bit"
+          "type" : "CIMFeatureDatasetDataConnection",
+          "featureDataset" : "DiscoveredResources",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\simple\\gis\\gdb\\Player_subset.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "Pools",
+          "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
         "searchOrder" : "esriSearchOrderSpatial"
@@ -292,7 +58,7 @@
         {
           "type" : "CIMLabelClass",
           "expressionTitle" : "Custom",
-          "expression" : "$feature.cntry_name",
+          "expression" : "$feature.PoolName",
           "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
@@ -541,8 +307,8 @@
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    229.31,
-                    196.91,
+                    207.00999999999999,
+                    246.38999999999999,
                     252.44999999999999,
                     100
                   ]
@@ -563,7 +329,7 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/8b5bb3ca9bc248209e19b8b902696117.json",
+      "uRI" : "CIMPATH=Map/c9f497f7525b4ec386961f951491cb3c.json",
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
