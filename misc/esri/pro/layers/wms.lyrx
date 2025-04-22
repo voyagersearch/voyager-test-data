@@ -1,0 +1,1089 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.4.0",
+  "build" : 55405,
+  "layers" : [
+    "CIMPATH=Map/STRIKE_Web_Map_Service.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMWMSLayer",
+      "name" : "STRIKE Web Map Service",
+      "uRI" : "CIMPATH=Map/STRIKE_Web_Map_Service.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "WMS",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/86e43bac331f4093afa2cc933ca5f3d0.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "serviceConnection" : {
+        "type" : "CIMWMSServiceConnection",
+        "version" : "1.3.0",
+        "serverConnection" : {
+          "type" : "CIMProjectServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://strike.nt.gov.au/wms?SERVICE=WMS&REQUEST=GetCapabilities",
+          "connectionMode" : "Consumer",
+          "serverType" : "WMS",
+          "useDefaultStagingFolder" : true
+        },
+        "capabilitiesParameters" : {
+          "type" : "PropertySet",
+          "propertySetItems" : [
+          ]
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMServiceCompositeSubLayer",
+          "expanded" : true,
+          "name" : "Layers",
+          "showLegends" : true,
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "subLayers" : [
+            {
+              "type" : "CIMServiceCompositeSubLayer",
+              "expanded" : true,
+              "name" : "Titles Register",
+              "showLegends" : true,
+              "visibility" : true,
+              "serviceLayerID" : -1,
+              "subLayers" : [
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Mineral Titles",
+                  "showLegends" : true,
+                  "visibility" : true,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Licences - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Licences - Application",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Licences - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Licences - Granted",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Licences - 30 Day Moratorium",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Licences - 30 Day Moratorium",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Partial Surrenders and Reductions",
+                      "showLegends" : true,
+                      "subLayerID" : "Partial Surrenders and Reductions",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Extractive Mineral Exploration Licences - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Extractive Mineral Exploration Licences - Application",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Extractive Mineral Exploration Licences - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Extractive Mineral Exploration Licences - Granted",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Other Mineral Titles - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Other Mineral Titles - Application",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Other Mineral Titles - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Other Mineral Titles - Granted",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Historical Mineral Titles",
+                      "showLegends" : true,
+                      "subLayerID" : "Historical Mineral Titles",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Reserved Land and Fossicking Areas",
+                      "showLegends" : true,
+                      "subLayerID" : "Reserved Land and Fossicking Areas",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Offshore Exploration Licences",
+                      "showLegends" : true,
+                      "subLayerID" : "Offshore Exploration Licences",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Licences - ALRA Moratorium Areas",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Licences - ALRA Moratorium Areas",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Energy Titles",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Acreage Release Areas",
+                      "showLegends" : true,
+                      "subLayerID" : "Acreage Release Areas",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Permits - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Permits - Application",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Permits - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Permits - Granted",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Retention Licences - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Retention Licences - Application",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Retention Licences - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Retention Licences - Granted",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Production Licences - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Production Licences - Application",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Production Licences - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Production Licences - Granted",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Other Petroleum Titles - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Other Petroleum Titles - Granted",
+                      "visibility" : true,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Other Petroleum Titles - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Other Petroleum Titles - Application",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Pipeline Permits and Licences - Proposed",
+                      "showLegends" : true,
+                      "subLayerID" : "Pipeline Permits and Licences - Proposed",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Pipeline Permits and Licences - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Pipeline Permits and Licences - Granted",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Historical Petroleum Titles",
+                      "showLegends" : true,
+                      "subLayerID" : "Historical Petroleum Titles",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Petroleum Reserves",
+                      "showLegends" : true,
+                      "subLayerID" : "Petroleum Reserves",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Petroleum Proposed Reserves",
+                      "showLegends" : true,
+                      "subLayerID" : "Petroleum Proposed Reserves",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Permits - ALRA Moratorium Areas",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Permits - ALRA Moratorium Areas",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Petroleum Designated Area",
+                      "showLegends" : true,
+                      "subLayerID" : "Petroleum Designated Area",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Geothermal Titles",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Permit - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Permit - Application",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Exploration Permit - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Exploration Permit - Granted",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Retention Licence - Application",
+                      "showLegends" : true,
+                      "subLayerID" : "Retention Licence - Application",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Retention Licence - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Retention Licence - Granted",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Retention Licence - Ceased",
+                      "showLegends" : true,
+                      "subLayerID" : "Retention Licence - Ceased",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Production Licence - Granted",
+                      "showLegends" : true,
+                      "subLayerID" : "Production Licence - Granted",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Production Licence - Ceased",
+                      "showLegends" : true,
+                      "subLayerID" : "Production Licence - Ceased",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Reserved Land",
+                      "showLegends" : true,
+                      "subLayerID" : "Reserved Land",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type" : "CIMServiceCompositeSubLayer",
+              "expanded" : true,
+              "name" : "Geoscience",
+              "showLegends" : true,
+              "visibility" : false,
+              "serviceLayerID" : -1,
+              "subLayers" : [
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Drilling",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Petroleum Wells",
+                      "showLegends" : true,
+                      "subLayerID" : "Petroleum Wells",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Bottom Hole Temperature",
+                      "showLegends" : true,
+                      "subLayerID" : "Bottom Hole Temperature",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Drillholes",
+                      "showLegends" : true,
+                      "subLayerID" : "Drillholes",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "HyLogged Drillholes",
+                      "showLegends" : true,
+                      "subLayerID" : "HyLogged Drillholes",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Core Library Catalogue",
+                      "showLegends" : true,
+                      "subLayerID" : "Core Library Catalogue",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Diamond Exploration",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Kimberlites",
+                      "showLegends" : true,
+                      "subLayerID" : "Kimberlites",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Macrodiamonds",
+                      "showLegends" : true,
+                      "subLayerID" : "Macrodiamonds",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Microdiamonds",
+                      "showLegends" : true,
+                      "subLayerID" : "Microdiamonds",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Diamond Indicator Minerals",
+                      "showLegends" : true,
+                      "subLayerID" : "Diamond Indicator Minerals",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Diamond Samples",
+                      "showLegends" : true,
+                      "subLayerID" : "Diamond Samples",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Geochemistry",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Rockchips",
+                      "showLegends" : true,
+                      "subLayerID" : "Rockchips",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Soils",
+                      "showLegends" : true,
+                      "subLayerID" : "Soils",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Stream Sediments",
+                      "showLegends" : true,
+                      "subLayerID" : "Stream Sediments",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Wholerock",
+                      "showLegends" : true,
+                      "subLayerID" : "Wholerock",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Geochronology",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geochronology UPbHfO",
+                      "showLegends" : true,
+                      "subLayerID" : "Geochronology UPbHfO",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geochronology SmNd",
+                      "showLegends" : true,
+                      "subLayerID" : "Geochronology SmNd",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Geology",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geology 2.5M",
+                      "showLegends" : true,
+                      "subLayerID" : "Geology 2.5M",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geological Regions 2.5M",
+                      "showLegends" : true,
+                      "subLayerID" : "Geological Regions 2.5M",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Regolith Regions 2.5M",
+                      "showLegends" : true,
+                      "subLayerID" : "Regolith Regions 2.5M",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Concealed Geological Boundaries",
+                      "showLegends" : true,
+                      "subLayerID" : "Concealed Geological Boundaries",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geological Faults 2.5M",
+                      "showLegends" : true,
+                      "subLayerID" : "Geological Faults 2.5M",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Geophysics",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geophysical Surveys - NTGS",
+                      "showLegends" : true,
+                      "subLayerID" : "Geophysical Surveys - NTGS",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geophysical Surveys - Industry Open File",
+                      "showLegends" : true,
+                      "subLayerID" : "Geophysical Surveys - Industry Open File",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Geophysical Surveys - Industry Closed File",
+                      "showLegends" : true,
+                      "subLayerID" : "Geophysical Surveys - Industry Closed File",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "LandSat 7 Image Index",
+                      "showLegends" : true,
+                      "subLayerID" : "LandSat 7 Image Index",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 2499994.9999997984,
+                      "name" : "Geophysical Strings - Magnetics",
+                      "showLegends" : true,
+                      "subLayerID" : "Geophysical Strings - Magnetics",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 2499994.9999997984,
+                      "name" : "Geophysical Strings - Gravity",
+                      "showLegends" : true,
+                      "subLayerID" : "Geophysical Strings - Gravity",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Seismic Lines",
+                      "showLegends" : true,
+                      "subLayerID" : "Seismic Lines",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Mineral Deposits and Mines",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Mines",
+                      "showLegends" : true,
+                      "subLayerID" : "Mines",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Mineral Occurrences",
+                      "showLegends" : true,
+                      "subLayerID" : "Mineral Occurrences",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Indexes",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Mapsheets 100K",
+                      "showLegends" : true,
+                      "subLayerID" : "Mapsheets 100K",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Mapsheets 250K",
+                      "showLegends" : true,
+                      "subLayerID" : "Mapsheets 250K",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "NTGS Products",
+                      "showLegends" : true,
+                      "subLayerID" : "NTGS Products",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Industry Reports",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Open Filed Mineral Reports",
+                      "showLegends" : true,
+                      "subLayerID" : "Open Filed Mineral Reports",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type" : "CIMServiceCompositeSubLayer",
+              "expanded" : true,
+              "name" : "Administrative Boundaries",
+              "showLegends" : true,
+              "visibility" : false,
+              "serviceLayerID" : -1,
+              "subLayers" : [
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Sensitive Areas",
+                  "showLegends" : true,
+                  "subLayerID" : "Sensitive Areas",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Jurisdictions",
+                  "showLegends" : true,
+                  "subLayerID" : "Jurisdictions",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Land Councils",
+                  "showLegends" : true,
+                  "subLayerID" : "Land Councils",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Aboriginal Community Living Areas",
+                  "showLegends" : true,
+                  "subLayerID" : "Aboriginal Community Living Areas",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                }
+              ]
+            },
+            {
+              "type" : "CIMServiceCompositeSubLayer",
+              "expanded" : true,
+              "name" : "Graticules and Blocks",
+              "showLegends" : true,
+              "visibility" : false,
+              "serviceLayerID" : -1,
+              "subLayers" : [
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "minScale" : 499998.99999974802,
+                  "name" : "1 Minute Graticular Blocks",
+                  "showLegends" : true,
+                  "subLayerID" : "1 Minute Graticular Blocks",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "minScale" : 499998.99999974802,
+                  "name" : "5 Minute Graticular Blocks",
+                  "showLegends" : true,
+                  "subLayerID" : "5 Minute Graticular Blocks",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "minScale" : 499998.99999974802,
+                  "name" : "5 Minute Graticular Blocks AGD66",
+                  "showLegends" : true,
+                  "subLayerID" : "5 Minute Graticular Blocks AGD66",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                }
+              ]
+            },
+            {
+              "type" : "CIMServiceCompositeSubLayer",
+              "expanded" : true,
+              "name" : "Land Information",
+              "showLegends" : true,
+              "visibility" : false,
+              "serviceLayerID" : -1,
+              "subLayers" : [
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Cadastre",
+                  "showLegends" : true,
+                  "subLayerID" : "Cadastre",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Land Administration",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 999997.99999949604,
+                      "name" : "Placenames",
+                      "showLegends" : true,
+                      "subLayerID" : "Placenames",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "maxScale" : 999997.99999949604,
+                      "name" : "Major Towns",
+                      "showLegends" : true,
+                      "subLayerID" : "Major Towns",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "Railways",
+                      "showLegends" : true,
+                      "subLayerID" : "Railways",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMServiceCompositeSubLayer",
+                      "name" : "Roads",
+                      "showLegends" : true,
+                      "visibility" : false,
+                      "serviceLayerID" : -1,
+                      "subLayers" : [
+                        {
+                          "type" : "CIMWMSSubLayer",
+                          "maxScale" : 2499994.9999997984,
+                          "name" : "Roads - NT",
+                          "showLegends" : true,
+                          "subLayerID" : "Roads - NT",
+                          "visibility" : false,
+                          "serviceLayerID" : -1
+                        },
+                        {
+                          "type" : "CIMWMSSubLayer",
+                          "description" : "Display: field CATEGORY sorted into major groups (display < 2mill)",
+                          "maxScale" : 99999.79999994961,
+                          "minScale" : 2499994.9999997984,
+                          "name" : "Roads - Regional",
+                          "showLegends" : true,
+                          "subLayerID" : "Roads - Regional",
+                          "visibility" : false,
+                          "serviceLayerID" : -1
+                        },
+                        {
+                          "type" : "CIMWMSSubLayer",
+                          "minScale" : 99999.79999994961,
+                          "name" : "Roads - Urban",
+                          "showLegends" : true,
+                          "subLayerID" : "Roads - Urban",
+                          "visibility" : false,
+                          "serviceLayerID" : -1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Town Boundaries",
+                  "showLegends" : true,
+                  "subLayerID" : "Town Boundaries",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Hundreds",
+                  "showLegends" : true,
+                  "subLayerID" : "Hundreds",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Local Government Areas",
+                  "showLegends" : true,
+                  "subLayerID" : "Local Government Areas",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Parcel Numbers",
+                  "showLegends" : true,
+                  "subLayerID" : "Parcel Numbers",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Aboriginal Land Claims - ALRA",
+                  "showLegends" : true,
+                  "subLayerID" : "Aboriginal Land Claims - ALRA",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "Aboriginal Land - ALRA",
+                  "showLegends" : true,
+                  "subLayerID" : "Aboriginal Land - ALRA",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMWMSSubLayer",
+                  "name" : "NT Enhanced Freehold Parcels",
+                  "showLegends" : true,
+                  "subLayerID" : "NT Enhanced Freehold Parcels",
+                  "visibility" : false,
+                  "serviceLayerID" : -1
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Land Resources",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "name" : "National Parks",
+                      "showLegends" : true,
+                      "subLayerID" : "National Parks",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                },
+                {
+                  "type" : "CIMServiceCompositeSubLayer",
+                  "name" : "Topography",
+                  "showLegends" : true,
+                  "visibility" : false,
+                  "serviceLayerID" : -1,
+                  "subLayers" : [
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 1499997.0000003024,
+                      "name" : "Minor Creeks and Streams",
+                      "showLegends" : true,
+                      "subLayerID" : "Minor Creeks and Streams",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 6399987.1999999499,
+                      "name" : "Major Rivers",
+                      "showLegends" : true,
+                      "subLayerID" : "Major Rivers",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 1499997.0000003024,
+                      "name" : "Minor Waterbodys",
+                      "showLegends" : true,
+                      "subLayerID" : "Minor Waterbodys",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 6399987.1999999499,
+                      "name" : "Major Lakes",
+                      "showLegends" : true,
+                      "subLayerID" : "Major Lakes",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    },
+                    {
+                      "type" : "CIMWMSSubLayer",
+                      "minScale" : 2499994.9999997984,
+                      "name" : "Catchments",
+                      "showLegends" : true,
+                      "subLayerID" : "Catchments",
+                      "visibility" : false,
+                      "serviceLayerID" : -1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "imageFormat" : "esriImagePNG"
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/86e43bac331f4093afa2cc933ca5f3d0.json",
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
