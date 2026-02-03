@@ -1,14 +1,14 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "3.2.0",
-  "build" : 49743,
+  "version" : "3.3.0",
+  "build" : 52636,
   "layers" : [
     "CIMPATH=map4/testdata_public_countries_15.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "testdata.public.countries_15",
+      "name" : "countries layer",
       "uRI" : "CIMPATH=map4/testdata_public_countries_15.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
@@ -17,7 +17,7 @@
       "description" : "testdata.public.countries_15",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map4/d6a8d73bbef4489e95e441383c77cadd.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/8b5bb3ca9bc248209e19b8b902696117.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -47,6 +47,7 @@
           "srid" : "-1",
           "spatialReference" : {
             "wkid" : 4326,
+            "latestWkid" : 4326,
             "xyTolerance" : 9.9999999999999995e-07,
             "zTolerance" : 0.001,
             "mTolerance" : 0.001,
@@ -257,7 +258,8 @@
                 "hasM" : false,
                 "hasZ" : false,
                 "spatialReference" : {
-                  "wkid" : null,
+                  "wkid" : 4326,
+                  "latestWkid" : 4326,
                   "xyTolerance" : 9.9999999999999995e-07,
                   "zTolerance" : 0.001,
                   "mTolerance" : 0.001,
@@ -285,6 +287,7 @@
       "featureCacheType" : "Session",
       "displayFiltersType" : "ByScale",
       "featureBlendingMode" : "Alpha",
+      "layerEffectsMode" : "Layer",
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
@@ -560,7 +563,7 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map4/d6a8d73bbef4489e95e441383c77cadd.json",
+      "uRI" : "CIMPATH=Map/8b5bb3ca9bc248209e19b8b902696117.json",
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
